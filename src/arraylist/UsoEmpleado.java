@@ -53,6 +53,6 @@ class Empleado {
 	}
 
 	public String toString() {
-		return "el nombre es: " + nombre + ", tiene " + edad + " anios, y su ingreso es: " + ingreso;
+		return "el nombre es " + nombre + ", tiene " + edad + " anios, y su ingreso es: " + ingreso;
 	}
 }
