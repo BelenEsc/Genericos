@@ -8,7 +8,7 @@ public class UsoEmpleado {
 
 	public static void main(String[] args) {
 
-		List<Empleado> listaEmpleados = new ArrayList<>();
+		ArrayList<Empleado> listaEmpleados = new ArrayList<>();
 		Empleado xy = new Empleado("Carmen", 55, 2000);
 
 		listaEmpleados.add(new Empleado("Ana0", 45, 2500));
@@ -20,7 +20,7 @@ public class UsoEmpleado {
 		listaEmpleados.add(new Empleado("Luisa6", 55, 2000));
 		listaEmpleados.add(new Empleado("Luisa7", 55, 2000));
 		listaEmpleados.add(xy);
-
+ 
 		System.out.println(listaEmpleados.indexOf(xy));
 		listaEmpleados.set(3, xy);
 		System.out.println(listaEmpleados.get(2));
