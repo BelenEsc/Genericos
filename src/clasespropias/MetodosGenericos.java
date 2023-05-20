@@ -46,10 +46,12 @@ class misMatrices {
 		}
 
 		T menor = t[0];
+//		System.out.println("el menor es: " + menor);
+		for (int i = 1; i < t.length; i++) {
 
-		for (int i = 0; i < t.length; i++) {
-
-			int x = menor.compareTo(t[i]);
+			int x = menor.compareTo(t[i]);// compare: si el elemento de la derecha es menor, tira un positivo, si el
+											// elemento de la derecha es mayor, tira un negavtivo
+//			System.out.println("equis " + x);
 			if (x > 0) {
 				menor = t[i];
 			}
@@ -60,9 +62,9 @@ class misMatrices {
 }
 
 class Empleado {
-	String nombre;
-	int edad;
-	double ingreso;
+	private String nombre;
+	private int edad;
+	private double ingreso;
 
 	public Empleado(String nombre, int edad, double ingreso) {
 		this.nombre = nombre;
@@ -72,5 +74,15 @@ class Empleado {
 
 	public String toString() {
 		return "el nombre es " + nombre + ", tiene " + edad + " anios, y su ingreso es: " + ingreso;
+	}
+}
+
+class Jefe extends Empleado {
+	public Jefe(String nombre, int edad, int salario) {
+		super(nombre, edad, salario);
+	}
+	
+	double incentivo (double x) {
+		return x;
 	}
 }

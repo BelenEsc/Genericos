@@ -18,5 +18,10 @@ public class Pareja<T> {
 	public T getValor() {
 		return primero;
 	}
+	
+	public static void getTrabajador(Pareja<? extends Empleado> p) {
+			Empleado primero = p.getValor();
+		 System.out.println(primero);
+	}
 
 }
